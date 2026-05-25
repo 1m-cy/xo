@@ -1,0 +1,105 @@
+XO Game Using Minimax Algorithm 
+Introduction 
+This project is a Tic Tac Toe (XO) game developed using Python and Tkinter. 
+ The game uses Artificial Intelligence through the Minimax Algorithm, allowing the computer 
+to make smart decisions and play optimally against the user . 
+ 
+Project Objectives 
+● Build a graphical XO game . 
+● Implement Artificial Intelligence . 
+● Use the Minimax Algorithm . 
+● Add different difficulty levels . 
+● Learn Game Theory and Search Algorithms . 
+ 
+Technologies Used 
+Technology Purpose 
+Python Main Programming Language 
+Tkinter GUI Development 
+Minimax Algorithm Artificial Intelligence 
+ 
+Project Structure 
+xo_minimax/ 
+│ 
+├── main.py 
+├── gui.py 
+├── ai.py 
+├── game_logic.py 
+└── README.txt 
+ 
+File Description 
+File Description 
+main.py Starts the game 
+gui.py Graphical User Interface 
+ai.py AI and Minimax logic 
+game_logic.py Game rules and winner 
+checking 
+README.txt Project explanation 
+ 
+What is Minimax Algorithm ? 
+The Minimax Algorithm is a decision-making algorithm used in Artificial Intelligence and 
+Game Theory . 
+The algorithm : 
+● Checks all possible moves . 
+● Predicts the opponent’s moves . 
+● Chooses the best possible move . 
+The computer tries to maximize its score while minimizing the player's score . 
+ 
+Scoring System 
+Situation Scor
+e 
+Computer Wins +1 
+Draw 0 
+Player Wins -1 
+ 
+Minimax Formula 
+f(x)=max (min (possible moves))f(x)=\max(\min(\text{possible moves}))f(x)=max(min(possible 
+moves (( 
+ 
+Difficulty Levels 
+Easy 
+The computer chooses random moves . 
+Medium 
+The computer mixes : 
+● Random moves 
+● Smart Minimax moves 
+Hard 
+The computer always uses the Minimax Algorithm and becomes very difficult to beat . 
+ 
+GUI Features 
+The graphical interface includes : 
+● XO game board 
+● Restart button 
+● Difficulty selection 
+● AI opponent 
+ 
+Sample Minimax Code 
+def minimax(is_maximizing): 
+ 
+   if check_winner('O'): 
+       return 1 
+ 
+   if check_winner('X'): 
+       return -1 
+ 
+   if is_draw(): 
+       return 0 
+ 
+Advantages of the Project 
+● Smart AI behavior 
+● Easy-to-use interface 
+● Organized project structure 
+● Demonstrates AI concepts clearly 
+● Interactive gameplay 
+ 
+Time Complexity 
+The complexity of Minimax is : 
+O(bd)O(b^d)O(bd ( 
+Where : 
+● b = branching factor 
+● d = depth of the game tree 
+ 
+Conclusion 
+This project demonstrates how Artificial Intelligence can be applied in games using the 
+Minimax Algorithm. 
+ The game provides an interactive experience while helping understand important AI 
+concepts such as search algorithms and decision trees
